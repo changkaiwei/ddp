@@ -40,5 +40,7 @@ public class Contoller {
         //切回主数据源
         DBContextHolder.clearDataSource();
         return "ok";
+
+        //关于不懂数据源的分布式事务 参考https://blog.csdn.net/qq_35387940/article/details/103474353
     }
 }
