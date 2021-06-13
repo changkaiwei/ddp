@@ -41,6 +41,8 @@ public class Contoller {
         DBContextHolder.clearDataSource();
         return "ok";
 
+        //每一次changeDb时 都会清空threadloacal，这会导致AbstractRoutingDataSource 使用默认数据源
+
         //关于不懂数据源的分布式事务 参考https://blog.csdn.net/qq_35387940/article/details/103474353
     }
 }
